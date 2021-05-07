@@ -17,6 +17,10 @@
         "triggerExcessiveLogging": {
           "title": "Trigger excessive logging",
           "entryPoint": "src/commands/triggerExcessiveLogging.js"
+        },
+        "triggerServerErrorLogging": {
+          "title": "Trigger server error logging",
+          "entryPoint": "src/commands/triggerServerErrorLogging.js"
         }
       },
       "events": {
@@ -29,6 +33,11 @@
           "title": "Log too much stuff on the server",
           "entryPoint": "src/events/excessiveLogging.js",
           "handles": ["aha-develop.server-invocation-triggers.excessiveLogging"]
+        },
+        "errorLogging": {
+          "title": "Trigger an error on the server",
+          "entryPoint": "src/events/errorLogging.js",
+          "handles": ["aha-develop.server-invocation-triggers.errorLogging"]
         }
       }
     }
