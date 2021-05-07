@@ -1,0 +1,45 @@
+{
+  "name": "@aha-develop/server-invocation-triggers",
+  "description": "Server invocation triggers",
+  "version": "0.0.0",
+  "author": "Aha!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aha-develop/extensions-server-invocation-triggers"
+  },
+  "ahaExtension": {
+    "contributes": {
+      "commands": {
+        "triggerDemoLogging": {
+          "title": "Trigger demo logging",
+          "entryPoint": "src/commands/triggerDemoLogging.js"
+        },
+        "triggerExcessiveLogging": {
+          "title": "Trigger excessive logging",
+          "entryPoint": "src/commands/triggerExcessiveLogging.js"
+        },
+        "triggerServerErrorLogging": {
+          "title": "Trigger server error logging",
+          "entryPoint": "src/commands/triggerServerErrorLogging.js"
+        }
+      },
+      "events": {
+        "demoLogging": {
+          "title": "Log some demo stuff on the server",
+          "entryPoint": "src/events/demoLogging.js",
+          "handles": ["aha-develop.server-invocation-triggers.demoLogging"]
+        },
+        "excessiveLogging": {
+          "title": "Log too much stuff on the server",
+          "entryPoint": "src/events/excessiveLogging.js",
+          "handles": ["aha-develop.server-invocation-triggers.excessiveLogging"]
+        },
+        "errorLogging": {
+          "title": "Trigger an error on the server",
+          "entryPoint": "src/events/errorLogging.js",
+          "handles": ["aha-develop.server-invocation-triggers.errorLogging"]
+        }
+      }
+    }
+  }
+}
