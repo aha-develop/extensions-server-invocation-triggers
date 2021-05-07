@@ -1,7 +1,7 @@
 {
-  "name": "aha-develop/server-invocation-triggers",
+  "name": "@aha-develop/server-invocation-triggers",
   "description": "Server invocation triggers",
-  "version": "0.0.1=0",
+  "version": "0.0.0",
   "author": "Aha!",
   "repository": {
     "type": "git",
