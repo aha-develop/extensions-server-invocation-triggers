@@ -3,4 +3,4 @@ I have found that the easiest way to play around with or test extensions code ru
 
 If you want to test some arbitrary code, just drop it in one of the existing events or create a new one with a command trigger of your own. 
 
-To run a command after installing the extension, open the search dialogue in Aha! - magnifying glass in the top right corner - and click on the "commands" tab. You can also get their via hotkeys by pressing "/" to open the search modal and then ">" to navigate to the commands tab.
+To run a command after installing the extension, open the search dialogue in Aha! - magnifying glass in the top right corner - and click on the "commands" tab. You can also get there via hotkeys by pressing "/" to open the search modal and then ">" to navigate to the commands tab.
